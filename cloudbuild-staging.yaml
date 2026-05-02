@@ -48,4 +48,4 @@ substitutions:
   _DB_PORT: '5432'
   _DB_PASSWORD_SECRET: 'db-password'
   _GOOGLE_CLIENT_ID: ''
-  _ALLOWED_ORIGINS: 'http://localhost:3030'
+  _ALLOWED_ORIGINS: 'https://frontend-dev-thsmcpbjwa-tl.a.run.app,http://localhost:3030'
