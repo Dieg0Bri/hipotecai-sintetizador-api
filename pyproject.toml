@@ -1,0 +1,9 @@
+[project]
+name = "sintetizador-api"
+version = "0.0.1"
+description = "Sintetiza extracciones de un estudio en un grafo del inmueble (NetworkX)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

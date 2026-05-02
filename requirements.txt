@@ -1,0 +1,8 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+python-decouple>=3.8
+google-cloud-logging>=3.11.0
+networkx>=3.4
+asyncpg>=0.30.0
+sqlalchemy>=2.0.0
