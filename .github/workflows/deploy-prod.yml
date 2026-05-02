@@ -23,7 +23,7 @@ jobs:
           workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
           service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
       - uses: google-github-actions/setup-gcloud@v2
-      - run: gcloud builds submit . --config=cloudbuild-prod.yaml --project=${{ secrets.GCP_PROJECT }}
+      - run: gcloud builds submit . --config=cloudbuild-prod.yaml --project=${{ secrets.GCP_PROJECT }} --substitutions=_GOOGLE_CLIENT_ID="${{ secrets.GOOGLE_CLIENT_ID }}"
       - id: url
         run: |
           URL=$(gcloud run services describe sintetizador-api --region=southamerica-west1 --project=${{ secrets.GCP_PROJECT }} --format='value(status.url)')
